@@ -22,5 +22,6 @@ urlpatterns = [
     path("", lambda arg1: HttpResponse("Hello World :D")),
     path("", include('applications.person.urls')),
     path("", include('applications.department.urls')),
+    path("", include('applications.home.urls')),
 
 ]
