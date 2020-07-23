@@ -20,4 +20,7 @@ from django.http import HttpResponse
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", lambda arg1: HttpResponse("Hello World :D")),
+    path("", include('applications.person.urls')),
+    path("", include('applications.department.urls')),
+
 ]
